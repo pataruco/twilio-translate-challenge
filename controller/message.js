@@ -15,8 +15,3 @@ export const sendMessage = async (request, response) => {
     });
   }
 };
-
-// twilio-translate-lab
-// 484610673764
-
-// Google Translate API key AIzaSyDCJBFw1gFsre0RUilQyViRsHZAFyqfhPM
