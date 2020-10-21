@@ -11,7 +11,12 @@ import jsonResponseMiddleware from './middleware/json-response.js';
 dotenv.config();
 const HOST = '127.0.0.1';
 const PORT = 5000;
-export const { TWILIO_SID, TWILIO_TOKEN } = process.env;
+export const {
+  TWILIO_SID,
+  TWILIO_TOKEN,
+  GOOGLE_APPLICATION_CREDENTIALS,
+  GOOGLE_API_PROJECT_ID,
+} = process.env;
 
 const server = express();
 // midlewares
