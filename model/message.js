@@ -1,10 +1,13 @@
 import twilio from 'twilio';
 import dotenv from 'dotenv';
-import { v2 } from '@google-cloud/translate';
+import translateApi from '@google-cloud/translate';
 
 dotenv.config();
 const { TWILIO_SID, TWILIO_TOKEN, GOOGLE_API_PROJECT_ID } = process.env;
-const { Translate } = v2;
+
+const {
+  v2: { Translate },
+} = translateApi;
 
 const twilioClient = twilio(TWILIO_SID, TWILIO_TOKEN);
 const translate = new Translate({ GOOGLE_API_PROJECT_ID });
